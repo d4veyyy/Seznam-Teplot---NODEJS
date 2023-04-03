@@ -1,0 +1,20 @@
+{
+  "name": "teplota",
+  "version": "1.0.0",
+  "description": "Zaznam denni teploty",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "David Benes",
+  "license": "ISC",
+  "keywords": [
+    "NODEJS",
+    "PUG",
+    "CSV"
+  ],
+  "dependencies": {
+    "express": "^4.18.2",
+    "git": "^0.1.5"
+  }
+}
