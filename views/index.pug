@@ -1,0 +1,28 @@
+doctype html
+html
+    head
+        title Seznam teplot
+        link(rel='stylesheet' href='https://getbootstrap.com/docs/4.4/dist/css/bootstrap.min.css')
+    body
+        header.jumbotron-fluid.bg-success.p-3
+            h1.text-center.text-white #{Teploty}
+        main.container
+            table(class="table table-striped")
+                thead
+                    tr.bg-dark.text-light
+                        th Teplota
+                        th Počasí
+                        th Datum odevzdané teploty
+                tbody
+                    each teplota in teploty
+                        tr                           
+                            td #{teplota.teplota}
+                            td #{teplota.pocasi}
+                            td #{teplota.datum}
+        footer.bg-dark.p-2
+            div.container.text-white
+                p.float-right
+                    a(href="/") Zpět na formulář
+                p &copy; 2022 - David Beneš IT2 -
+        script(src='https://code.jquery.com/jquery-3.4.1.slim.min.js')
+        script(src='https://getbootstrap.com/docs/4.4/dist/js/bootstrap.bundle.min.js')
